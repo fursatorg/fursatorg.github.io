@@ -1,88 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>फुरसत | अवकाश | Fursat</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    p {
-      margin-bottom: 20px;
-    }
-    nav {
-      background-color: #333;
-      overflow: hidden;
-    }
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    nav ul li {
-      display: inline;
-    }
-    nav ul li a {
-      display: inline-block;
-      padding: 10px 20px;
-      color: white;
-      text-decoration: none;
-    }
-    nav ul li a:hover {
-      background-color: #555;
-    }
-	.background-container {
-      background-image: url('assets/fursat1.jpg');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      height: 450px; /* Adjust height as needed */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+	<title>फुरसत | अवकाश | Fursat</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    .pre1 {
-      color: white;
-      font-size: 18px;
-      background: rgba(0, 0, 0, 0.5); /* Optional: to make the text more readable */
-      padding: 10px;
-      white-space: pre-wrap;
-    }
-  </style>
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+.pre1 {
+  color: white;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.5); /* Optional: to make the text more readable */
+  padding: 10px;
+  white-space: pre-wrap;
+}
+
+</style>
 </head>
-<body id="head">
-  <nav>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#meetups">Meetup</a></li>
-    </ul>
-  </nav>
-  <h1 id="home"> फुरसत | अवकाश | Fursat </h1>
-  <sub><i>Unleashing Creativity: Embracing the Freedom of Unstructured Moments</i></sub>
-  <hr>
-<div class="background-container">
-  <pre class="pre1">
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#challenges" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CHALLENGES</a>
+    <a href="#values" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VALUES</a>
+    <a href="#meetup" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEETUP</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+<!--
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+--!>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#meetup" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="assets/fursat1.jpg" style="height:50%">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+<pre class="pre1">
   जिंदगी फुर्सत है 
 
   लेकिन,
   जीने वालों को फुर्सत कहाँ?
-  101 नुसके मनोरंजन के
+  १०१ नुसके मनोरंजन के
   नुस्को मे फुर्सत कहाँ?
 
   दो धडकनो के बीच की फुर्सत, जानने को दिल बेताब रहा.
@@ -93,17 +78,20 @@
   हमारे दिलों ने एक ही तमन्ना की,
   के ईस तरह मिलते रहने की "फुर्सत" सब को मिलें.
   </pre>
-</div>
+    </div>
+  </div>
 
-  <h2> What is Fursat?</h2>
-  <p>
-    The lack of physical space in today's world seems to be a big issue,
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+    <h2 class="w3-wide">What is Fursat?</h2>
+    <p class="w3-opacity"><i>Unleashing Creativity: Embracing the Freedom of Unstructured Moments</i></p>
+    <p class="w3-justify">The lack of physical space in today's world seems to be a big issue,
     especially in the overpopulated cities which we have accepted as a norm.
     What is daunting and omnipresent is the lack of mental/psychological space.
     Our overthinking and burden of our own self leave very little space for
     something new to take place in our brains.
-  </p>
-  <p>
+</p>
+  <p class="w3-justify">
     Architecture and design deal with both these issues. In our day-to-day
     living, the absence of both physical and psychological space should
     naturally lead us to find Fursat. When one experiences any of the
@@ -112,7 +100,7 @@
     Human existence on this planet is old enough to find such architecture very
     close to wherever one may live on this planet.
   </p>
-  <p>
+  <p class="w3-justify">
     Having said that, as an architect practicing in the most affluent era of
     human existence, one is often disheartened to find no connection with the
     masterpieces that were achieved in the past. There are many obvious reasons
@@ -121,8 +109,13 @@
     lives. One of the prime reasons for this degradation seems to me the lack of
     attention and awareness.
   </p>
-  <h2>Challenges and Solutions</h2>
-  <p>
+
+  </div>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="challenges">
+    <h2 class="w3-wide">Challenges</h2>
+    <p class="w3-opacity"><i>And Solutions</i></p>
+	<p class="w3-justify">
     How to bring back that attention and awareness is a challenge that Fursat
     Space, as an entity, would like to face. Fursat shall be 'a sangha', 'a
     family' of dedicated people who would come together in order to learn
@@ -130,7 +123,7 @@
     the act of selflessly constructing architecture. The skills and technical
     knowledge will be shared and practiced through routine training modules.
   </p>
-  <p>
+	<p class="w3-justify">
     The training will primarily focus on collaboration and cooperation
     techniques with an emphasis on selflessness and hence the presence of love
     and empathy. A set of skilled people that is aware of the potential of
@@ -140,15 +133,19 @@
     will have to get trained in one or many skill sets of the construction work.
     They will be paid a reasonable stipend during the training period.
   </p>
-  <p>
+	<p class="w3-justify">
     The training modules may be run on live construction sites or in a dedicated
     training center. Whenever there is no work on-site, the team shall
     concentrate on training and upscaling of skills and systems of collaborative
     effort. During these times also, the members of Fursat will be paid the
     minimum wages, which can be recovered from past/future commissions.
   </p>
-  <h2>Core Values</h2>
-  <p>
+  </div>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="values">
+    <h2 class="w3-wide">Core Values</h2>
+    <p class="w3-opacity"><i>To bring back the love, calmness, and peace</i></p>
+	<p class="w3-justify">
     There will be a constant/consistent effort to excel, with an emphasis on
     collaboration that will lead to an 'Open to all', 'Truthful', and
     'Transparent' coexistence that will be independent of any kind of authority.
@@ -157,17 +154,23 @@
     have no relevance whatsoever in the relationships within the Sangha apart
     from the organized effort.
   </p>
-  <p>
+	<p class="w3-justify">
     Fursat will bring back the love, calmness, and peace that are the origin of
     everything that is beautiful.
   </p>
+  </div>
 
-<hr>
-  <h1 id="meetups"> फुरसत से चंद्रदर्शन | Fursat Se Chandradarshan </h1>
-  <h3> Every month, on the night of the full moon, there is a terrace meeting. </h3>
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="meetup">
+    <h2 class="w3-wide"> फुरसत से चंद्रदर्शन | Fursat Se Chandradarshan </h2>
+    <p class="w3-opacity"><i>Monthly Meetup</i></p>
+	Every month, on the night of the full moon, there is a terrace meeting.
 
-  <h4> 23rd February's announcement </h4>
 	<pre>
+
+	  </pre>
+
+<div class="w3-panel w3-leftbar w3-light-grey">
+  <p class="w3-xlarge w3-serif">
 	"फुरसत" उपक्रम - दर महिन्याला पौर्णिमेच्या रात्री टेरेस मीटिंग.
 
 	 या महिन्यात २३ फेब्रुवारी २०२४ रोजी.
@@ -177,29 +180,89 @@
 	 आम्ही मास्टर्सने लिहिलेला लेख/लिखाण वाचू व ऐकू आणि काय सांगितले गेले आहे हे समजून घेण्यासाठी त्यावर चर्चा करू.
 	  चंद्रदर्शन ०३- आर्किटेक्ट. चार्ल्स कोरिया
 	 सत्र सर्वांसाठी खुले असेल.
-	कृपया,अद्वैत पाटणकर यांना ९८५०८५७१६२ या क्रमांकावर, व्हाट्सअप मेसेज पाठवून, उपस्थितीची पूर्वपुष्टी करावी.
-	  </pre>
+	कृपया,अद्वैत पाटणकर यांना X८५०८५७१६X या क्रमांकावर, व्हाट्सअप मेसेज पाठवून, उपस्थितीची पूर्वपुष्टी करावी.</p>
 
-   <p>Translated message:</p>
-	<pre>
-	Location: Awar-Fursat Terrace, Near Shivam Hospital, Ajinkyatara Road, Godoli, Satara. Time: 9:00 PM to 10:30 PM
+  <p>अद्वैत पाटणकर</p>
+</div>
+
+<div class="w3-panel w3-leftbar w3-light-grey">
+  <p class="w3-xlarge w3-serif">
+	Location: Awar-Fursat Terrace, Near Shivam Hospital, Ajinkyatara Road, Godoli, Satara.
+	Time: 9:00 PM to 10:30 PM
 	The name of this session is "Fursat Se Chandradarshan," which is focused on learning from master architects.
-	We will discuss to understand and interpret the articles written by masters and what they have conveyed.
+	We will discuss to understand and interpret the articles written by masters
+	and what they have conveyed.
 	Chandradarshan 03 - Architect Charles Korea
 	The session is open to everyone.
-	Please confirm your attendance by sending a WhatsApp message to Advait Patankar at 9850857162.
-	</pre>
-  <hr>
-  <nav>
-    <ul>
-      <li><a href="#">home</a></li>
-      <li><a href="#meetups">Meetup</a></li>
-    </ul>
-  </nav>
+	Please confirm your attendance by sending a WhatsApp message to Advait
+	Patankar at X85085716X.
+</p>
 
-  <footer>
-    <sub>The site is under construction. Please reach us at fursatorg at gmail dot com. </sub>
+  <p>Adwait Patankar</p>
+</div>
+	<p class="w3-justify">
+	</p>
+
+
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <div class="w3-row w3-padding-32">
+        <i class="fa fa-map-marker" style="width:30px"></i> Ajinkyatara Road, Godoli, Satara<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: (3^2)85085716(4/2)<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: fursatorg at gmail dot com<br>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
     <p>&copy; 2024 Fursat.org All rights reserved.</p>
-  </footer>
+  <p class="w3-medium">Developed by <a href="https://doublefree.in" target="_blank">doublefree.in</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
